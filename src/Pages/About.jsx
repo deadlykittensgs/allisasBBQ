@@ -5,6 +5,7 @@ export default function About() {
   return ( <>
     <Header/>
     <div>About</div>
+    <Footer/>
   </>
   )
 }

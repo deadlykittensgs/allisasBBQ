@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from '../Components/Header'
+import Footer from '../Components/Footer'
 import ribs from '../assets/BBQBackground.avif';
 import storefront from '../assets/skr_2757.avif';
 import food from '../assets/BBQ.avif';
 import Logo from '../assets/logo.png';
 import '../../src/index.css'; 
 import MapComponent from '../Components/MapComponent';
+
 
 
 export default function Home() {
@@ -56,7 +58,6 @@ export default function Home() {
      {/* inside the store */}
      <div className='flex flex-col bg-cover bg-center h-[350px] w-screen
     items-center justify-center' style={{ backgroundImage: `url(${food})` }}  >
-      inside the store
     </div>
 {/* about us  */}
     <div className='bg-amber-100 flex flex-col items-center justify-evenly w-page h-[300px] px-[30px]'>
@@ -94,46 +95,13 @@ export default function Home() {
 
     </div>
 {/* map  */}
-    <div className=' flex flex-col items-center justify-evenly w-page h-[300px] px-[30px] bg-red-700 p-10'>
+    <div className=' flex flex-col items-center justify-evenly w-page h-[300px] px-[30px] bg-zinc-50 p-10'>
       
 <MapComponent/>
     </div>
 
-    
+    <Footer/>
 
-{/* information  */}
-    <div className='bg-stone-950 text-slate-50 flex flex-col items-center justify-evenly w-page h-[400px] px-[30px]'>
-    <div className='flex flex-col items-center'>
-    <h1 className='text-[1.5rem]'>Location</h1>
-      <p>405 E Kerr Blvd, Wynnewood </p>
-      <p>Wynnewood, OK</p>
-      <p>73098</p>
-    </div>
-
-    <div className='flex flex-col items-center'>
-      <h1 className='text-[1.5rem]'> Hours </h1>
-      <p>Tue-Fri 10:30-8 </p>
-      <p>Sat 3-8</p>
-      <p>Sun 10:30-3</p>
-    </div>
-
-    <div >
-      <h1 className='text-[1.5rem]'> Find us on </h1>
-   <div className='flex justify-evenly'>
-    <p><i className="fa-brands fa-facebook-f"></i></p>
-    <p><i className="fa-brands fa-instagram"></i></p>
-    <p><i className="fa-brands fa-google"></i></p></div>
-    </div>
-
-    <div className='text-[1.5rem]'> 
-      <h1>Contact Us At </h1>
-      <p>(405) 331-8262</p>
-    </div>
-
-
-
-
-    </div>
   </>
   )
 }

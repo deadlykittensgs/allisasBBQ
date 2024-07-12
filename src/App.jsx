@@ -4,6 +4,7 @@ import About from './Pages/About'
 import Home from './Pages/Home'
 import Nopage from './Pages/Nopage'
 import Jobs from './Pages/Jobs'
+import Order from './Pages/Order'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,8 @@ function App() {
       <Route path='/About' element={<About/>}/>
       <Route path='*' element={<Nopage/>}/>
       <Route path='jobs' element={<Jobs/>}/>
+      <Route path='order' element={<Order/>}/>
+
     </Routes>
     </BrowserRouter>
     </div>
