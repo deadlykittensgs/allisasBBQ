@@ -1,3 +1,20 @@
+
+@import url('https://unpkg.com/leaflet/dist/leaflet.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: serif;
+}
+
+
+
+.roboto-condensed-roboto {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
