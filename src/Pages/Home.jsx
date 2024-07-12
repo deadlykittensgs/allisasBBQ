@@ -23,7 +23,7 @@ export default function Home() {
     </div>
 
     {/* address  */}
-    <div className='bg-amber-100 flex flex-col items-center p-5'>
+    <div className='bg-amber-50 flex flex-col items-center p-5'>
       <div><i className=" text-red-700 fa-solid fa-location-dot"></i></div>
       <p className='p-2'>405 E Kerr Blvd, Wynnewood</p>
     </div>
@@ -40,7 +40,7 @@ export default function Home() {
     items-center justify-center' style={{ backgroundImage: `url(${food})` }}  >
     </div>
     {/* pick up  */}
-    <div className='bg-amber-100 flex flex-col items-center justify-evenly w-page h-[300px] px-[30px]'>
+    <div className='bg-amber-50 flex flex-col items-center justify-evenly w-page h-[300px] px-[30px]'>
       <h2 className='text-[1.9rem]'>Order Us to Go!</h2>
       <p className=''>Enjoy the convenience of dining at home? place your order online now and savor our delicious menu from the comfort of your own space!</p>
       <div><button className='bg-red-700 text-slate-100 px-4 py-px rounded' >Pick UP</button></div>
@@ -50,7 +50,7 @@ export default function Home() {
     items-center justify-center' style={{ backgroundImage: `url(${food})` }}  >
     </div>
 {/* cater */}
-    <div className='bg-amber-100 flex flex-col items-center justify-evenly w-page h-[300px] px-[30px]'>
+    <div className='bg-amber-50 flex flex-col items-center justify-evenly w-page h-[300px] px-[30px]'>
       <h2 className='text-[1.9rem]' >Catering?</h2>
       <p className=''>Have a big event or wedding coming up soon? let allisas take the stress out of feeding everyone by allowing us to cater for you!</p>
       <div><button className='bg-red-700 text-slate-100 px-4 py-px rounded' >Request Catering</button></div>
@@ -60,7 +60,7 @@ export default function Home() {
     items-center justify-center' style={{ backgroundImage: `url(${food})` }}  >
     </div>
 {/* about us  */}
-    <div className='bg-amber-100 flex flex-col items-center justify-evenly w-page h-[300px] px-[30px]'>
+    <div className='bg-amber-50 flex flex-col items-center justify-evenly w-page h-[300px] px-[30px]'>
       <h2 className='text-[1.9rem]' >About Alissa</h2>
       <h2>We know our BBQ</h2>
       <p className=''>This will be an about allisa page telling about her food and anything else you would want here </p>
@@ -88,7 +88,7 @@ export default function Home() {
       </div>
     </div>
 {/* contact */}
-<div className='bg-amber-100 flex flex-col items-center justify-evenly w-page h-[200px] px-[30px]'>
+<div className='bg-amber-50 flex flex-col items-center justify-evenly w-page h-[200px] px-[30px]'>
       <h2 className='text-[1.9rem]' >Contact us</h2>
       <h2>Email: <span className='font-bold'>ouremail@gmail.com</span></h2>
       <h2>Store Phone: <span className='font-bold'>(405) 331-8262</span></h2>

@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Nopage from './Pages/Nopage'
 import Jobs from './Pages/Jobs'
 import Order from './Pages/Order'
+import Catering from './Pages/Catering'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <Route path='*' element={<Nopage/>}/>
       <Route path='jobs' element={<Jobs/>}/>
       <Route path='order' element={<Order/>}/>
+      <Route path='catering' element={<Catering/>}/>
 
     </Routes>
     </BrowserRouter>

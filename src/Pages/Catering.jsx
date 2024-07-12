@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 
-export default function Jobs() {
+export default function Catering() {
   return (
     <>
      <Header/>
@@ -15,8 +15,8 @@ export default function Jobs() {
 
 
         <div className='flex flex-col items-center'> 
-            <p className='text-[2rem]'>Want to work with us? </p>
-            <p className=''>Tell us a little about yourself and we will be in touch! </p>
+            <p className='text-[2rem]'>Catering </p>
+            <p className=''>Tell us about your event and we will be in touch! </p>
         </div>
 
 <div className='flex flex-col'>
@@ -35,20 +35,20 @@ export default function Jobs() {
 </div>
 
 <div className='flex flex-col'>
-    <p className='text-[1.7rem]'>e.g Experience</p>
-    <input type="text" name="" id="" placeholder='e.g 3 years serving'/>
+    <p className='text-[1.7rem]'>Event</p>
+    <input type="text" name="" id="" placeholder='e.g wedding/graduation '/>
 </div>
 
 <div className='flex flex-col' >
-    <p>Applying for:</p>
+    <p>Guest Count Estimate:</p>
    
-    <input type="text" name="" id="" placeholder='e.g waiter/cook' />
+    <input type="text" name="" id="" placeholder='e.g 100 adults 10 kids' />
     </div>
   
 
     <div className='flex flex-col '>
-    <p>Cover Letter</p>
-    <textarea className='h-[200px]' type="text" name="" id="" placeholder=' Write a short comment about your skills and experience' />
+    <p>Date Desired / Additional notes</p>
+    <textarea className='h-[200px]' type="text" name="" id="" placeholder=' Tell us when you need catering and anything else you think we should know' />
     </div>
 
 
