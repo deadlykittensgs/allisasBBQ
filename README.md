@@ -8,4 +8,9 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-https://chipper-platypus-7d46fb.netlify.app/
+https://chipper-platypus-7d46fb.netlify.app
+
+
+work on review changer in home page
+
+make sure drop down menu does not go behind map 

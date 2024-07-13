@@ -1,7 +1,7 @@
 import React from 'react'
 import Food  from '../assets/BBQBackground.avif';
 
-export default function Meals({mealName,price,meats,sides,select}) {
+export default function Meals({mealName,price,meats,sides,select, img}) {
 
     function clicked() {
 
@@ -9,7 +9,7 @@ export default function Meals({mealName,price,meats,sides,select}) {
     }
 
   return (
-    <button onClick={clicked} className='flex bg-slate-100 rounded min-h-[200px] min-w-[300px] outline'>
+    <button onClick={clicked} className='flex bg-slate-100 rounded min-h-[200px] max-w-300px] min-w-[300px] outline'>
         <div className=' h-[100%] flex flex-col justify-between flex-1'>
        <div className='p-2 flex flex-col items-start'>
        <h1 className='text-[1.1rem]'>{mealName}</h1>
@@ -20,7 +20,9 @@ export default function Meals({mealName,price,meats,sides,select}) {
             ${price}
         </div>
         </div>
-       <div className=' flex bg-amber-100 h-[100%] w-[50%] justify-center items-center'>food picture</div>
+       <div className=' flex bg-amber-100 h-[100%] w-[50%] justify-center items-center'>
+         {/* <img src={img} alt="item image" /> */}
+         </div>
     </button>
   )
 }

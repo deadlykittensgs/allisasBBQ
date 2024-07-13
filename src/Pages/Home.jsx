@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import ribs from '../assets/BBQBackground.avif';
@@ -11,6 +11,30 @@ import MapComponent from '../Components/MapComponent';
 
 
 export default function Home() {
+
+const [review, setReview] = useState("Best food ever! the ribs were falling off the bone and the sides were hot and fresh")
+const [number, setNumber] = useState(1)
+
+function nextReview(direction) {
+  let reviews = ["review zero", "The Green Chile burger was the best I’ve ever had by far.", "Absolutely best pulled pork anywhere!! And awesome Mac and cheese!!! We drive from okc just to eat here.", "Food is always good. Peach cobbler is outstanding. Olivia is the best waitress." ,"Thank yall for catering for us. The food was absolutely amazing and the delivery was early which worked perfect and the price was great. Thank ya’ll from the whole family.","I was glad they reopened before I left. One of the last places I ate before leaving the area and I really enjoyed the barbecue."]
+if(number == 5 && direction == "up" ){
+  setNumber(1)
+  setReview(reviews[number])
+  return
+}
+if(number == 1 && direction == "down" ){
+  setNumber(5)
+  setReview(reviews[number])
+  return
+
+} else {
+  setReview(reviews[number])
+  return
+}
+}
+
+
+
   return (
     <>
     <Header/>
@@ -70,12 +94,14 @@ export default function Home() {
     <div className='flex flex-col bg-cover bg-center h-[350px] w-screen
     items-center justify-center' style={{ backgroundImage: `url(${food})` }}  >
     </div>
+
+    {/* reviews  */}
     <div className='bg-zinc-50 flex flex-col items-center justify-evenly w-page h-[300px] px-[30px]'>
       <h2 className='text-[1.7rem]'>People are saying</h2>
-      <div className='flex'>
-        <button> <i className="fa-solid fa-angle-left"></i> </button> 
-        <p className='flex px-[30px]'> best good ever and other good things! also a bunch of other words to test text overflow </p>
-        <button> <i className="fa-solid fa-angle-right"></i></button> 
+      <div className='flex justify-center items-center min-w-[100%] '>
+        <button onClick={() => { setNumber(number -1), nextReview("down")}}> <i className="fa-solid fa-angle-left rounded hover:bg-slate-300"></i> </button> 
+        <p className='flex flex-1 justify-center px-[30px]'>{review}</p>
+        <button onClick={() => { setNumber(number +1),  nextReview("up")}}> <i className="fa-solid fa-angle-right rounded hover:bg-slate-300"></i></button> 
       </div>
  
       <div className='flex gap-5'>

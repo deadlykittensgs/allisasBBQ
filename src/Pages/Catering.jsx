@@ -7,7 +7,7 @@ export default function Catering() {
     <>
      <Header/>
 
-    <div className='flex flex-col flex-1 p-[10%] pt-[0px] bg-slate-300'>
+    <div className='flex flex-col flex-1 p-[10%] pt-[0px] bg-rose-200'>
        
         <div className='flex items-center justify-center'>
             <div className='text-[3rem]'>Logo</div>
