@@ -44,6 +44,15 @@ export default function DropdownMenu() {
           tabIndex="-1"
         >
           <div className="py-1" role="none">
+          <a
+              href="home"
+              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
+              role="menuitem"
+              tabIndex="-1"
+              id="menu-item-0"
+            >
+              Home
+            </a>
             <a
               href="order"
               className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
