@@ -1,16 +1,19 @@
 import React from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
+import Logo from '../assets/logo.png';
 
 export default function Catering() {
   return (
     <>
      <Header/>
 
-    <div className='flex flex-col flex-1 p-[10%] pt-[0px] bg-rose-200'>
+    <div className='flex flex-col flex-1 p-[10%] pt-[0px] bg-blue-300/60'>
        
         <div className='flex items-center justify-center'>
-            <div className='text-[3rem]'>Logo</div>
+            <div className='text-[3rem]'>
+                <img src={Logo} alt="Logo" />
+            </div>
         </div>
 
 

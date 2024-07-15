@@ -17,11 +17,12 @@ function App() {
     <Routes>
       <Route index element={<Home/>}/> 
       <Route path='/home' element={<Home/>}/>
-      <Route path='/About' element={<About/>}/>
+      <Route path='/about' element={<About/>}/>
       <Route path='*' element={<Nopage/>}/>
-      <Route path='jobs' element={<Jobs/>}/>
-      <Route path='order' element={<Order/>}/>
-      <Route path='catering' element={<Catering/>}/>
+      <Route path='/jobs' element={<Jobs/>}/>
+      <Route path='/order' element={<Order/>}/>
+      <Route path='/catering' element={<Catering/>}/>
+   
 
     </Routes>
     </BrowserRouter>

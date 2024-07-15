@@ -72,15 +72,6 @@ export default function DropdownMenu() {
               Catering
             </a>
             <a
-              href="home"
-              className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
-              role="menuitem"
-              tabIndex="-1"
-              id="menu-item-2"
-            >
-             Contact Us
-            </a>
-            <a
               href="jobs"
               className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
               role="menuitem"
@@ -90,7 +81,7 @@ export default function DropdownMenu() {
               Jobs
             </a>
             <a
-              href="home"
+              href="/about"
               className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100"
               role="menuitem"
               tabIndex="-1"

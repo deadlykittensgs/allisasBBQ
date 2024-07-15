@@ -13,4 +13,20 @@ https://chipper-platypus-7d46fb.netlify.app
 
 work on review changer in home page
 
-make sure drop down menu does not go behind map 
+make sure drop down menu does not go behind map (for some reason maps had a z index of 100+)
+
+
+update footer icon 
+
+Job and catering send button
+
+Home button 
+
+Facebook
+
+
+
+  {/* image 2 */}
+    {/* <div className='flex flex-col bg-cover bg-center h-[400px] w-screen
+    items-center justify-center' style={{ backgroundImage: `url(${food})` }}  >
+    </div> */}

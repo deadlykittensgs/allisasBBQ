@@ -22,9 +22,10 @@ export default function Footer() {
 <div >
   <h1 className='text-[1.5rem]'> Find us on </h1>
 <div className='flex justify-evenly'>
-<p><i className="fa-brands fa-facebook-f"></i></p>
-<p><i className="fa-brands fa-instagram"></i></p>
-<p><i className="fa-brands fa-google"></i></p></div>
+<a href='https://www.facebook.com/people/Allisas-Kitchen-BBQ-Grill/100091901814175/' target='_blank'><i className="fa-brands fa-facebook-f hover:text-blue-700"></i></a>
+<a href='https://www.facebook.com/people/Allisas-Kitchen-BBQ-Grill/100091901814175/' target='_blank'><i className="fa-brands fa-instagram hover:text-yellow-500"></i></a>
+<a href='https://www.facebook.com/people/Allisas-Kitchen-BBQ-Grill/100091901814175/'target='_blank'><i className="fa-brands fa-google hover:text-green-700"></i></a>
+</div>
 </div>
 
 <div className='text-[1.5rem]'> 

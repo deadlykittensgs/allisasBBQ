@@ -7,6 +7,7 @@
 
 * {
     font-family: serif;
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -20,7 +21,7 @@
 
 
 .bg-custom-image {
-  background-image: url('../src/assets/istockphoto-181847357-1024x1024.jpg'); /* Replace with your image URL */
+  background-image: url('../src/assets/istockphoto-525108931-1024x1024.jpg'); /* Replace with your image URL */
   background-repeat: repeat;
   background-size: auto; /* Ensures the image is not resized */
   background-position: top left; /* Aligns the image to the top left corner */
