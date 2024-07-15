@@ -1,6 +1,8 @@
 import React from 'react'
 import Food  from '../assets/BBQBackground.avif';
 import foodImg from '../assets/BBQ.avif';
+import threeMeat from '../assets/threeMeat.jpg';
+
 
 export default function Meals({mealName,price,meats,sides,select, img, description}) {
 
@@ -17,15 +19,13 @@ export default function Meals({mealName,price,meats,sides,select, img, descripti
         <p className='text-[0.9rem]'>{meats}</p>
         <p className='text-[0.9rem]'>{sides}</p>
        </div>
-        <div className='p-2 flex items-start'>
+        <div className='p-2 flex align-top'>
         ${price}
         </div>
         </div>
-       <div className=' flex flex-col bg-slate-300 h-[200px] w-[200px] justify-center items-center'>
-      <p className='p-5 overflow-auto text-xs'>
-        <img src={foodImg} alt="food img" />
-      </p>
-      {description}
+       <div className=' flex flex-col items-start bg-slate-200 h-[200px] w-[200px] p-2'>
+        <img className='' src={img} alt="food img" />
+        <p className='flex flex-1 w-[100%] justify-center items-center'>{description}</p>
          </div>
     </button>
   )
