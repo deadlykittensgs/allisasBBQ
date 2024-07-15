@@ -92,7 +92,7 @@ if(number == 1 && direction == "down" ){
     </div>
 {/* about us  */}
     <div className='bg-amber-50 flex flex-col items-center justify-evenly  w-screen min-w-[50%] h-[350px] px-[30px]'>
-      <h2 className=' font-medium text-[1.9rem]' >About Alissa</h2>
+      <h2 className=' font-medium text-[1.9rem]' >About Allisa</h2>
       <h2>We know our BBQ</h2>
       <p className=''>This will be an about allisa page telling about her food and anything else you would want here </p>
       <div><a href='about' className='bg-red-700 text-slate-100 p-4 py-2 rounded' >Read More</a></div>
