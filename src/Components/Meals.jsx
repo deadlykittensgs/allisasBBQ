@@ -12,7 +12,7 @@ export default function Meals({mealName,price,meats,sides,select, img, descripti
     }
 
   return (
-    <button onClick={clicked} className='flex bg-slate-100 rounded h-[200px] outline'>
+    <button onClick={clicked} className='flex bg-slate-300 rounded h-[200px] outline'>
         <div className=' h-[200px] w-[150px] flex flex-col justify-between '>
        <div className='p-2 flex flex-col items-start'>
        <h1 className=' flex text-start text-[1.1rem]'>{mealName}</h1>
@@ -23,9 +23,11 @@ export default function Meals({mealName,price,meats,sides,select, img, descripti
         ${price}
         </div>
         </div>
-       <div className=' flex flex-col items-start bg-slate-200 h-[200px] w-[200px] p-2'>
-        <img className='' src={img} alt="food img" />
-        <p className='flex flex-1 w-[100%] justify-center items-center'>{description}</p>
+       <div className=' flex flex-col justify-center items-start bg-slate-100 h-[200px] w-[200px] p-2'>
+        <img className=' h-[100px] w-[100%]' src={img} alt="food img" />
+        <div className='flex flex-1 w-[100%] justify-center items-center bg-slate-200 rounded'>
+          <p>{description}</p>
+        </div>
          </div>
     </button>
   )

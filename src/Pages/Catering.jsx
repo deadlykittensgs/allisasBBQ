@@ -20,7 +20,7 @@ if (name ==="" || phone ==="" || email ==="" || event ==="" || guestCount ==="" 
     setMessage("Please fill out all forms below")
     return 
 } else {
-    alert(`name: ${name} phone ${phone} email ${email} event ${event} guestCount ${guestCount} date ${date}`);
+    console.log(`name: ${name} phone ${phone} email ${email} event ${event} guestCount ${guestCount} date ${date}`);
     setMessage("Catering Request Sent!") 
    }};
   

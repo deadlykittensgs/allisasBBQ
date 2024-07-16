@@ -20,7 +20,7 @@ export default function Jobs() {
             setMessage("Please fill out all forms below")
             return 
         } else {
-            alert(`name: ${name} phone ${phone} email ${email} experience ${experience} position ${position} Resume ${Resume} coverLetter ${coverLetter}`);
+            console.log(`name: ${name} phone ${phone} email ${email} experience ${experience} position ${position} Resume ${Resume} coverLetter ${coverLetter}`);
             setMessage("Application Sent!") 
            }};
   
