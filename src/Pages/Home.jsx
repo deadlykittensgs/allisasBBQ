@@ -130,7 +130,7 @@ if(number == 1 && direction == "down" ){
 <div className='bg-amber-50 flex flex-col items-center justify-evenly w-page h-fit gap-2 p-3 '>
       <h2 className='text-[1.9rem]' >Contact us</h2>
       <h2>Email: <span className='font-bold'>ouremail@gmail.com</span></h2>
-      <h2>Store Phone: <span className='font-bold'>(405) 331-8262</span></h2>
+      <h2>Store Phone: <span className='font-bold'>(405) 123-1234</span></h2>
 
     </div>
 {/* map  */}
