@@ -11,27 +11,49 @@ import MapComponent from '../Components/MapComponent';
 
 
 export default function Home() {
+  let reviews = [["zero"],["review one"],["review two"],["review three"],["review four"],["review five "]]
+const [review, setReview] = useState(reviews[3])
+const [number, setNumber] = useState(3)
 
-const [review, setReview] = useState("Best food ever! the ribs were falling off the bone and the sides were hot and fresh")
-const [number, setNumber] = useState(1)
 
-function nextReview(direction) {
-  let reviews = ["review zero", "The Green Chile burger was the best I’ve ever had by far.", "Absolutely best pulled pork anywhere!! And awesome Mac and cheese!!! We drive from okc just to eat here.", "Food is always good. Peach cobbler is outstanding. Olivia is the best waitress." ,"Thank yall for catering for us. The food was absolutely amazing and the delivery was early which worked perfect and the price was great. Thank ya’ll from the whole family.","I was glad they reopened before I left. One of the last places I ate before leaving the area and I really enjoyed the barbecue."]
-if(number == 5 && direction == "up" ){
+
+
+function clickedReview(direction) {
+  console.log("clicked")
+  console.log(number)
+  number == number
+
+if (direction === "up" && number === 5){
   setNumber(1)
-  setReview(reviews[number])
-  return
+  setReview(reviews[1])
+return
 }
-if(number == 1 && direction == "down" ){
+if (direction === "down" && number === 1) {
   setNumber(5)
-  setReview(reviews[number])
-  return
+  setReview(reviews[5])
+return
+}
+if (direction == "up") {
+  setNumber(number + 1)
+  reviewUp(1)
+  console.log(review)
+}
+if (direction == "down") {
+  setNumber(number - 1)
+  reviewUp(-1)
+  console.log(review)
+} 
+}
 
-} else {
-  setReview(reviews[number])
+function reviewUp(upBy) {
+  setReview(reviews[number + upBy])
   return
 }
-}
+
+
+
+
+
 
 
 
@@ -111,17 +133,17 @@ if(number == 1 && direction == "down" ){
     <div id='maps' className='bg-zinc-50 flex flex-col items-center justify-evenly  w-screen min-w-[50%] h-[350px] px-[30px]'>
       <h2 className='font-medium text-[1.7rem]'>What People Are Saying</h2>
       <div className='flex justify-center items-center min-w-[100%] '>
-        <button onClick={() => { setNumber(number -1), nextReview("down")}}> <i className="fa-solid fa-angle-left rounded hover:bg-slate-300"></i> </button> 
+        <button onClick={() => {clickedReview("down")}}> <i className="fa-solid fa-angle-left rounded hover:bg-slate-300"></i> </button> 
         <p className='flex flex-1 justify-center px-[30px]'>{review}</p>
-        <button onClick={() => { setNumber(number +1),  nextReview("up")}}> <i className="fa-solid fa-angle-right rounded hover:bg-slate-300"></i></button> 
+        <button onClick={() => {clickedReview("up")}}> <i className="fa-solid fa-angle-right rounded hover:bg-slate-300"></i></button> 
       </div>
  
       <div  className='flex gap-5'>
-        <div className='overflow-hidden rounded-full w-3 h-3 bg-slate-700' ></div>
-        <div className='overflow-hidden rounded-full w-3 h-3 bg-slate-500' ></div>
-        <div className='overflow-hidden rounded-full w-3 h-3 bg-slate-500' ></div>
-        <div className='overflow-hidden rounded-full w-3 h-3 bg-slate-500' ></div>
-        <div className='overflow-hidden rounded-full w-3 h-3 bg-slate-500' ></div>
+        <div className={number === 1 ?'overflow-hidden rounded-full w-3 h-3 bg-slate-800':'overflow-hidden rounded-full w-3 h-3 bg-slate-500'}></div>
+        <div className={number === 2 ?'overflow-hidden rounded-full w-3 h-3 bg-slate-800':'overflow-hidden rounded-full w-3 h-3 bg-slate-500'} ></div>
+        <div className={number === 3 ?'overflow-hidden rounded-full w-3 h-3 bg-slate-800':'overflow-hidden rounded-full w-3 h-3 bg-slate-500'}></div>
+        <div className={number === 4 ?'overflow-hidden rounded-full w-3 h-3 bg-slate-800':'overflow-hidden rounded-full w-3 h-3 bg-slate-500'} ></div>
+        <div className={number === 5 ?'overflow-hidden rounded-full w-3 h-3 bg-slate-800':'overflow-hidden rounded-full w-3 h-3 bg-slate-500'} ></div>
 
       </div>
     </div>
