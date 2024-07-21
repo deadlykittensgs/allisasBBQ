@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-import Logo from '../assets/logo.png';
 import emailjs from '@emailjs/browser'
+
 
 export default function Catering() {
   
@@ -49,9 +49,9 @@ setMessage("Catering request has been sent we will respond shortly")
     <form onSubmit={sendEmail} className='flex flex-col flex-1 p-[10%] pt-[0px] bg-blue-300/60'>
        
         <div className='flex items-center justify-center'>
-            <div className='text-[3rem]'>
-                <img src={Logo} alt="Logo" />
-            </div>
+        <div className=' flex items-center justify-center bg-slate-100 h-[200px] w-[200px] rounded-full my-[40px]'> 
+          Logo Here
+         </div>
         </div>
 
 

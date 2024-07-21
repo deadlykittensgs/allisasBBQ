@@ -1,6 +1,5 @@
 import React from 'react'
-import Food  from '../assets/BBQBackground.avif';
-import foodImg from '../assets/BBQ.avif';
+import foodImg from '../assets/pexels-pixabay-533325.jpg';
 import threeMeat from '../assets/threeMeat.jpg';
 
 

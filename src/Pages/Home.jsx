@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-import ribs from '../assets/BBQBackground.avif';
-import storefront from '../assets/skr_2757.avif';
-import food from '../assets/BBQ.avif';
-import Logo from '../assets/logo.png';
+import ribs from '../assets/pexels-pascal-claivaz-66964-410648.jpg';
+import storefront from '../assets/pexels-minan1398-1482803.jpg';
+import food from '../assets/pexels-pixabay-533325.jpg';
 import '../../src/index.css'; 
 import MapComponent from '../Components/MapComponent';
 
@@ -65,17 +64,19 @@ function reviewUp(upBy) {
       {/* menu */}
       <div className=' flex flex-col bg-cover bg-center h-[450px] w-screen
     items-center justify-evenly ' style={{ backgroundImage: `url(${ribs})` }}>
-      <div> 
-        <img src={Logo} alt="Logo" />   
+      <div className=' flex items-center justify-center bg-slate-100 h-[200px] w-[200px] rounded-full'> 
+          Logo Here
          </div>
-      <p className='text-slate-100 text-lg font-[900]'>Best BBQ in Oklahoma</p>
+         <div className='bg-slate-100/90 rounded-full'>
+         <p className='text-slate-950 px-[40px] py-[5px] text-lg font-[900]'>Best BBQ in Oklahoma</p>
+         </div>
 <a href='order' className=' flex items-center justify-center text-slate-100 bg-red-700 border-2 p-1 rounded w-[30%] hover:bg-red-600'>View Menu</a>
     </div>
 
     {/* address  */}
     <div className='bg-amber-100 flex flex-col items-center p-1'>
       <div onClick={ () => {window.location.href='#map'}}><i className=" text-red-700 fa-solid fa-location-dot"></i></div>
-      <a href='https://www.google.com/maps/place/Allisa%E2%80%99+kitchen+BBQ+%26+Grill/@34.6425474,-97.1771658,17z/data=!4m14!1m7!3m6!1s0x87b2dfea8e712b47:0xedd8c845d85340a7!2sAllisa%E2%80%99+kitchen+BBQ+%26+Grill!8m2!3d34.6425474!4d-97.1745855!16s%2Fg%2F11stzg639w!3m5!1s0x87b2dfea8e712b47:0xedd8c845d85340a7!8m2!3d34.6425474!4d-97.1745855!16s%2Fg%2F11stzg639w?entry=ttu' target='_blank' className='font-semibold underline text-blue-700 pb-3'>405 E Kerr Blvd Wynnewood</a>
+      <a href='https://www.google.com/maps/place/Wynnewood,+OK+73098/@34.6426009,-97.1623665,15z/data=!3m1!4b1!4m6!3m5!1s0x87b2de0260150331:0x2df50c940a2315e6!8m2!3d34.6434171!4d-97.1644656!16zL20vMHo2MDU?entry=ttu' target='_blank' className='font-semibold underline text-blue-700 pb-3'>123 N Kerr Blvd Wynnewood OK</a>
     </div>
   
   {/* box 1  */}
