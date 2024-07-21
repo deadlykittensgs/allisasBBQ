@@ -8,9 +8,7 @@ export default function About() {
     <Header/>
     <div className='flex flex-col items-center p-10 bg-slate-200'>
       <h1 className=' p-5 flex items-center justify-center text-[2rem]'>Our Team</h1>
-
-
-      <div className=' flex mb-10 w-[300px] h-[200px]  justify-center items-center'> 
+      <div className=' flex mb-10 w-[300px] h-[200px]  justify-center items-center rounded'> 
       <img src={Logo} alt="pic of crew" />
       </div>
 <div className='flex flex-col items-center justify-center'> 

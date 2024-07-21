@@ -10,8 +10,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className=' z-[10000] text-slate-100 bg-red-700 flex items-center justify-between p-7 sticky top-0 border border-b-slate-50 border-t-red-700 border-r-red-700 border-l-red-700'>
-     <div className=' items-center justify-center bg-amber-500 p-2 rounded-full '>
+    <div className=' z-[10000] text-slate-100 bg-red-700 flex items-center justify-between sticky top-0 border border-b-slate-50 border-t-red-700 border-r-red-700 border-l-red-700'>
+     <div className='bg-amber-500 p-3 rounded-full text-center ml-[10px]'>
      <a href='home' className=' sm:text-[0.9rem] md:text-[1.2rem] roboto-condensed-roboto p-4 hover:text-slate-950'>Ryan's BBQ & Bar</a>
      </div>
      

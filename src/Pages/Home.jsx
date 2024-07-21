@@ -88,7 +88,7 @@ function reviewUp(upBy) {
     {/* pick up  */}
     <div className='bg-amber-50 flex flex-col items-center justify-evenly  w-screen min-w-[50%] h-[400px] px-[30px]'>
       <h2 className='font-medium text-[1.9rem]'>View Our Menu</h2>
-      <p className=''>Take a look at all the food we serve and see details about everything</p>
+      <p className=''>Take a look at all the food we serve and see details about our menu</p>
       <div><a href='order' className=' bg-red-700 text-slate-100 p-4 py-2 rounded hover:bg-red-600' >Menu</a></div>
     </div>
     </div>
@@ -102,7 +102,7 @@ function reviewUp(upBy) {
 {/* cater */}
     <div className=' p-10 bg-amber-50 flex flex-col items-center justify-evenly w-page h-auto px-[30px] min-w-[50%]'>
       <h2 className='font-medium text-[1.9rem]' >Catering</h2>
-      <p className='p-10'>Have a big event or wedding coming up soon? let allisas take the stress out of feeding everyone by allowing us to cater for you!</p>
+      <p className='p-10'>Have a big event or wedding coming up soon? let us take the stress out of feeding everyone by allowing us to cater for you!</p>
       <div><a href='catering'  className='bg-red-700 text-slate-100 p-4 py-2 rounded hover:bg-red-600 ' >Request Catering</a></div>
     </div>
     </div>
@@ -115,7 +115,7 @@ function reviewUp(upBy) {
     </div>
 {/* about us  */}
     <div className='bg-amber-50 flex flex-col items-center justify-evenly  w-screen min-w-[50%] h-[350px] px-[30px]'>
-      <h2 className=' font-medium text-[1.9rem]' >About Allisa</h2>
+      <h2 className=' font-medium text-[1.9rem]' >About Us</h2>
       <h2>We know our BBQ</h2>
       <p className=''>This will be an about allisa page telling about her food and anything else you would want here </p>
       <div><a href='about' className='bg-red-700 text-slate-100 p-4 py-2 rounded' >Read More</a></div>
