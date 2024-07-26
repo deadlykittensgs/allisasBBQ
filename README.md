@@ -1,32 +1,8 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+live - https://ryansbbqandbar.netlify.app/
 
 
-https://chipper-platypus-7d46fb.netlify.app
+This app was created created with React.JS and Tailwind CSS, and is a sleek, five-page showcase for small businesses. It boosts credibility by displaying hours, location (with an integrated map), product offerings, prices, descriptions, and unique images. The app features a catering request page and a job application page, both seamlessly connected to EmailJS, ensuring direct communication with the business owner.
 
 
-work on review changer in home page
-
-make sure drop down menu does not go behind map (for some reason maps had a z index of 100+)
-
-
-update footer icon 
-
-Job and catering send button
-
-Home button 
-
-Facebook
-
-
-
-  {/* image 2 */}
-    {/* <div className='flex flex-col bg-cover bg-center h-[400px] w-screen
-    items-center justify-center' style={{ backgroundImage: `url(${food})` }}  >
-    </div> */}
+(Most of the logos and images have been removed and replaced with generic stock images and names for privacy reasons and to make this code easier to use as a quick template)
