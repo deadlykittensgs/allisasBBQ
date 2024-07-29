@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import OrderedMeal from '../Components/OrderedMeal'
@@ -6,6 +6,14 @@ import OrderedMeal from '../Components/OrderedMeal'
 
 
 export default function Cart() {
+
+    const [orderedMeals, setOrderedMeals] = useState([<OrderedMeal/>, <OrderedMeal/>,]);
+
+function addMeal(mealName,sides,drink,price) {
+    console.log("clicked")
+    setOrderedMeals([...orderedMeals, <OrderedMeal mealName={mealName} sides={sides} drink={drink} price={price} />])
+}
+
 
   return (
 
@@ -29,11 +37,10 @@ export default function Cart() {
      <p className=' flex items-center justify-center text-red-500 flex-1 text-center '>Minimum (15 min)</p>
      </div>
 
-<div className='' >
+<div>
+    <button onClick={() => {addMeal('Ribs','Fries','tea', 24)}}> add meal</button>
     <p className=' text-center text-[1.3rem] bg-gradient-to-r from-neutral-300 to-stone-400 overflow-auto' >Items</p>
-        <OrderedMeal/>
-        <OrderedMeal/>
-        <OrderedMeal/>
+     {orderedMeals}
 
     </div>
    
