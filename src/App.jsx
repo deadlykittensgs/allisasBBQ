@@ -6,6 +6,7 @@ import Nopage from './Pages/Nopage'
 import Jobs from './Pages/Jobs'
 import Order from './Pages/Order'
 import Catering from './Pages/Catering'
+import Cart from './Pages/Cart'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Route path='/jobs' element={<Jobs/>}/>
       <Route path='/order' element={<Order/>}/>
       <Route path='/catering' element={<Catering/>}/>
+      <Route path='/cart' element={<Cart/>}/>
    
 
     </Routes>
