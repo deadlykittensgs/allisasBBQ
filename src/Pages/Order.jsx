@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Meals from '../Components/Meals'
@@ -9,11 +9,30 @@ import comingSoon from '../assets/comingsoon.png'
 
 
 
+
 export default function Order() {
 
     function clicked() {
         console.log("clicked")
     }
+
+    const mostPopular = useRef(null);
+    const diners = useRef(null);
+    const baskets = useRef(null);
+    const salads = useRef(null);
+    const kidsMeals = useRef(null);
+    const specials = useRef(null);
+    const deserts = useRef(null);
+    const appetizers = useRef(null);
+    const sides = useRef(null);
+    const drinks = useRef(null);
+
+
+   function handleScroll(location) {
+    console.log("clicked")
+    location.current.scrollIntoView({ behavior: 'smooth' });
+      };
+
 
 
   return (  
@@ -22,9 +41,23 @@ export default function Order() {
 
     <div className='flex flex-col bg-custom-image'>
     <Header/>
-    <div className='flex flex-col flex-1'>
+    <div className='flex flex-col'>
+        <div className='flex justify-evenly h-fit w-[100%] bg-amber-100/90 overflow-auto sticky top-[70px]'>
+            <button  onClick={ () => handleScroll(mostPopular)} className='hover:bg-slate-100 p-3' >Most Popular</button>
+            <button  onClick={ () => handleScroll(diners)} className='hover:bg-slate-100 p-3' >Diners</button>
+            <button  onClick={ () => handleScroll(baskets)} className='hover:bg-slate-100 p-3' >Baskets</button>
+            <button  onClick={ () => handleScroll(salads)} className='hover:bg-slate-100 p-3' >Salads</button>
+            <button  onClick={ () => handleScroll(kidsMeals)} className='hover:bg-slate-100 p-3' >Kids Meals</button>
+            <button  onClick={ () => handleScroll(specials)} className='hover:bg-slate-100 p-3' >Specials</button>
+            <button  onClick={ () => handleScroll(deserts)} className='hover:bg-slate-100 p-3' >Deserts</button>
+            <button  onClick={ () => handleScroll(appetizers)} className='hover:bg-slate-100 p-3' >Appetizers</button>
+            <button  onClick={ () => handleScroll(sides)} className='hover:bg-slate-100 p-3' >Sides</button>
+            <button onClick={ () => handleScroll(drinks)} className='hover:bg-slate-100 p-3' >Drinks</button>
 
-        <div className='flex flex-col items-center align-center' > 
+
+        </div>
+
+        <div ref={mostPopular}  className='flex flex-col items-center align-center' > 
         <p className=' p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8'>Most Popular</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
         <Meals mealName={"Sliced Beef Diner"} price={16.00} meats={'Meats: 1'} sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy" } img={threeMeat}/>
@@ -34,7 +67,7 @@ export default function Order() {
         </div>
         </div>
 
-        <div className='flex flex-col items-center align-center' > 
+        <div ref={diners}  className='flex flex-col items-center align-center' > 
         <p className=' p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8' >Dinners</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
         <Meals mealName={"Sliced Beef Diner"} price={16.00} meats={'Meats: 1'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
@@ -48,7 +81,7 @@ export default function Order() {
         </div>
         </div>
 
-        <div  className='flex flex-col items-center align-center'  >
+        <div ref={baskets}   className='flex flex-col items-center align-center'  >
             <p className=' p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8' >Baskets</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
         <Meals mealName={"Hamburger Basket"} price={10.00}  sides={"Sides:1"} img={burger}  description={"discription of the item"}/>
@@ -62,7 +95,7 @@ export default function Order() {
             </div>
 
 
-        <div   className='flex flex-col items-center align-center'   >
+        <div ref={salads}    className='flex flex-col items-center align-center'   >
             <p className='p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8' >Salads</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
         <Meals mealName={"BBQ Salad"} price={12.00} meats={'Meats: 1'} img={threeMeat} description={"discription of the item"} />
@@ -71,7 +104,7 @@ export default function Order() {
             </div>
             </div>
 
-        <div  className='flex flex-col items-center align-center' >
+        <div ref={kidsMeals}   className='flex flex-col items-center align-center' >
             <p className='p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8' >Kids Meals</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
         <Meals mealName={"Chicken Strip Basket"} price={8.00} meats={'Meats: 1'}  sides={"Sides:1"}  img={threeMeat} description={"discription of the item"}/>
@@ -81,7 +114,7 @@ export default function Order() {
             </div>
             </div>
 
-        <div className='flex flex-col items-center align-center'  >
+        <div ref={specials}  className='flex flex-col items-center align-center'  >
         <p className='p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8' >Specials</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
         <Meals mealName={"Catfish Basket"} price={10.00} sides={"Sides:1"} img={threeMeat} description={"discription of the item"}/>
@@ -93,7 +126,7 @@ export default function Order() {
 
 
 
-            <div  className='flex flex-col items-center align-center' >
+            <div ref={deserts}   className='flex flex-col items-center align-center' >
         <p className='p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8' >Deserts</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
         <Meals mealName={"Caramel Bunt Cake"} price={6.00} img={threeMeat} description={"discription of the item"}/>
@@ -102,7 +135,7 @@ export default function Order() {
             </div>
             </div>
 
-            <div className='flex flex-col items-center align-center'  >
+            <div ref={appetizers}  className='flex flex-col items-center align-center'  >
         <p className='p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8' >Appetizers</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
         <Meals mealName={"Onion Rings with Cajun Ranch"} price={8.00} img={threeMeat} description={"discription of the item"}  />
@@ -113,7 +146,7 @@ export default function Order() {
             </div>
 
 
-        <div  className='flex flex-col items-center align-center' >
+        <div ref={sides}   className='flex flex-col items-center align-center' >
         <p className='p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8' >Sides</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
         <Meals mealName={"Mac & Cheese"} price={3.00} img={threeMeat} description={"discription of the item"}/>
@@ -133,7 +166,7 @@ export default function Order() {
 
    
 
-        <div  className='flex flex-col items-center align-center pb-10' >
+        <div ref={drinks}  className='flex flex-col items-center align-center pb-10' >
         <p className='p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8' >Drinks</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
         <Meals mealName={"Tea"} price={3.00} description={"Sweet Or Unsweet"} img={"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Iced_Tea_from_flickr.jpg/160px-Iced_Tea_from_flickr.jpg"}/>
