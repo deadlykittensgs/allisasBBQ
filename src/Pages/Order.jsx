@@ -37,14 +37,14 @@ export default function Order() {
 
   return (  
     
-
+// diner 
 
     <div className='flex flex-col bg-custom-image'>
     <Header/>
     <div className='flex flex-col'>
         <div className='flex justify-evenly h-fit w-[100%] bg-amber-100/90 overflow-auto sticky top-[70px]'>
             <button  onClick={ () => handleScroll(mostPopular)} className='hover:bg-slate-100 p-3' >Most Popular</button>
-            <button  onClick={ () => handleScroll(diners)} className='hover:bg-slate-100 p-3' >Diners</button>
+            <button  onClick={ () => handleScroll(diners)} className='hover:bg-slate-100 p-3' >Dinners</button>
             <button  onClick={ () => handleScroll(baskets)} className='hover:bg-slate-100 p-3' >Baskets</button>
             <button  onClick={ () => handleScroll(salads)} className='hover:bg-slate-100 p-3' >Salads</button>
             <button  onClick={ () => handleScroll(kidsMeals)} className='hover:bg-slate-100 p-3' >Kids Meals</button>
@@ -60,24 +60,24 @@ export default function Order() {
         <div ref={mostPopular}  className='flex flex-col items-center align-center' > 
         <p className=' p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8'>Most Popular</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
-        <Meals mealName={"Sliced Beef Diner"} price={16.00} meats={'Meats: 1'} sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy" } img={threeMeat}/>
+        <Meals mealName={"Sliced Beef Dinner"} price={16.00} meats={'Meats: 1'} sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy" } img={threeMeat}/>
         <Meals mealName={"Catfish Basket"} price={10.00} sides={"Sides:1"} description={"3 peices of catfish on a bun with a roll and hushpuppy"} img={comingSoon}/>
         <Meals mealName={"Rib Dinner"} price={16.00} meats={'Meats: 1'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
-        <Meals mealName={"2 Meat Diner"} price={18.00} meats={'Meats: 2'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
+        <Meals mealName={"2 Meat Dinner"} price={18.00} meats={'Meats: 2'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
         </div>
         </div>
 
         <div ref={diners}  className='flex flex-col items-center align-center' > 
         <p className=' p-3 bg-slate-200/80 items-center text-center text-[1.5rem] w-screen m-8' >Dinners</p>
         <div className='flex items evenly justify-evenly gap-10 flex-1 flex-wrap '>
-        <Meals mealName={"Sliced Beef Diner"} price={16.00} meats={'Meats: 1'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
-        <Meals mealName={"Chopped Beef Diner"} price={16.00} meats={'Meats: 1'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
+        <Meals mealName={"Sliced Beef Dinner"} price={16.00} meats={'Meats: 1'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
+        <Meals mealName={"Chopped Beef Dinner"} price={16.00} meats={'Meats: 1'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
         <Meals mealName={"Rib Dinner"} price={16.00} meats={'Meats: 1'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
-        <Meals mealName={"Sausage Diner"} price={15.00} meats={'Meats: 1'}  sides={"Sides:2"}  description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
-        <Meals mealName={"Hot Link Diner"} price={15.00} meats={'Meats: 1'}  sides={"Sides:2"}  description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
-        <Meals mealName={"Pulled Pork Diner"} price={15.00} meats={'Meats: 1'}  sides={"Sides:2"}  description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
-        <Meals mealName={"2 Meat Diner"} price={18.00} meats={'Meats: 2'}  sides={"Sides:2"}  description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
-        <Meals mealName={"3 Meat Diner"} price={20.00} meats={'Meats: 3'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
+        <Meals mealName={"Sausage Dinner"} price={15.00} meats={'Meats: 1'}  sides={"Sides:2"}  description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
+        <Meals mealName={"Hot Link Dinner"} price={15.00} meats={'Meats: 1'}  sides={"Sides:2"}  description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
+        <Meals mealName={"Pulled Pork Dinner"} price={15.00} meats={'Meats: 1'}  sides={"Sides:2"}  description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
+        <Meals mealName={"2 Meat Dinner"} price={18.00} meats={'Meats: 2'}  sides={"Sides:2"}  description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
+        <Meals mealName={"3 Meat Dinner"} price={20.00} meats={'Meats: 3'}  sides={"Sides:2"} description={"sliced beef on a bun with a roll and hushpuppy"} img={threeMeat}/>
         </div>
         </div>
 
